@@ -1,0 +1,25 @@
+.contact {
+    text-align: center;
+    background-color: #140d0b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1,
+p,
+a,
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
