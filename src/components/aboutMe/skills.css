@@ -1,4 +1,6 @@
-.about {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.skills {
     text-align: center;
     background-color: #39304A;
     min-height: 100vh;
@@ -8,11 +10,13 @@
     justify-content: center;
 }
 
-.about h1,
+.skills h1,
 p,
 a,
 h1,
 h2,
 h3 {
     color: #fff;
+    font-size: 32px;
+    font-family: Libre Baskerville;
 }

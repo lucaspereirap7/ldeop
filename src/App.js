@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Home from './components/home/home';
 import Projects from './components/projects/projects';
-import About from './components/aboutMe/about';
+import Skills from './components/aboutMe/skills';
 import Contact from './components/contact/contact';
 import Navbar from './components/navbar/navbar';
 
@@ -58,8 +57,7 @@ function App() {
         </svg>
       </div>
 
-      <Home />
-      <About />
+      <Skills />
       <Projects />
 
       <div className="wave-dividerProjects">
