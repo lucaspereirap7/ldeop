@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/home/home';
 import Projects from './components/projects/projects';
@@ -46,8 +45,8 @@ function App() {
     <div className="App">
       <Navbar />
       <section className="App-header">
-        <p>Hello, nice to meet you!</p>
-        <p>You can call me: {typedText}</p>
+        <p className='textHome'>Hello, nice to meet you!</p>
+        <p className='textHome'>You can call me: {typedText}</p>
       </section>
 
       <div className="wave-divider">

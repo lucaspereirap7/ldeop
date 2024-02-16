@@ -48,6 +48,8 @@ header {
     color: white;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-family: Libre Baskerville;
+    font-size: 20px;
 }
 
 .nav-item a:hover {
