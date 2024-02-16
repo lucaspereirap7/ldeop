@@ -6,11 +6,10 @@ import About from './components/aboutMe/about';
 import Contact from './components/contact/contact';
 import Navbar from './components/navbar/navbar';
 
-
 function App() {
   const [typedText, setTypedText] = useState('');
   const textsToType = ["Lucas", "Luquinha", "Luket", "As you wish..."];
-  const typingSpeed = 100;
+  const typingSpeed = 60;
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -46,7 +45,11 @@ function App() {
       <Navbar />
       <section className="App-header">
         <p className='textHome'>Hello, nice to meet you!</p>
-        <p className='textHome'>You can call me: {typedText}</p>
+        <p className='textHome'>
+          You can call me: {typedText}
+          {isDeleting && <span className="blinking-cursor">|</span>}
+          {!isDeleting && <span className="blinking-cursor">|</span>}
+        </p>
       </section>
 
       <div className="wave-divider">

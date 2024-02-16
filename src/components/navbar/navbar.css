@@ -48,7 +48,7 @@ header {
     color: white;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-family: Libre Baskerville;
+    font-family: Libre Baskerville, serif;
     font-size: 20px;
 }
 
