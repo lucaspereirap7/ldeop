@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/home/home';
@@ -7,11 +7,48 @@ import About from './components/aboutMe/about';
 import Contact from './components/contact/contact';
 import Navbar from './components/navbar/navbar';
 
+
 function App() {
+  const [typedText, setTypedText] = useState('');
+  const textsToType = ["Lucas", "Luquinha", "Luket", "As you wish..."];
+  const typingSpeed = 100;
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentText = textsToType[currentTextIndex];
+    let currentIndex = typedText.length;
+
+    const interval = setInterval(() => {
+      if (!isDeleting) {
+        if (currentIndex <= currentText.length) {
+          setTypedText(currentText.substring(0, currentIndex));
+          currentIndex++;
+        } else {
+          setIsDeleting(true);
+          currentIndex--;
+        }
+      } else {
+        if (currentIndex >= 0) {
+          setTypedText(currentText.substring(0, currentIndex));
+          currentIndex--;
+        } else {
+          setIsDeleting(false);
+          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textsToType.length);
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(interval);
+  }, [typedText, isDeleting, currentTextIndex, textsToType, typingSpeed]);
+
   return (
     <div className="App">
       <Navbar />
-      <section className="App-header"></section>
+      <section className="App-header">
+        <p>Hello, nice to meet you!</p>
+        <p>You can call me: {typedText}</p>
+      </section>
 
       <div className="wave-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -33,6 +70,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

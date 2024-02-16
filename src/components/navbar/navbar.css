@@ -51,14 +51,14 @@ header {
 }
 
 .nav-item a:hover {
-    color: #007bff; /* Adjust hover color as needed */
+    color: #9281a7; /* Adjust hover color as needed */
 }
 
 .btn {
-    border: 2px solid #007bff; /* Adjust button border color */
+    border: 2px solid #9281a7; /* Adjust button border color */
     padding: 8px 16px;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #9281a7;
     color: #fff;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -66,7 +66,7 @@ header {
 
 .btn:hover {
     background-color: transparent;
-    color: #007bff;
+    color: #9281a7;
 }
 
 /* Media Query for Mobile Menu */
