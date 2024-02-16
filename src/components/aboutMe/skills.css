@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+@-webkit-keyframes tracking-in-expand-fwd-top {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px) translateY(-500px);
+        transform: translateZ(-700px) translateY(-500px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand-fwd-top {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px) translateY(-500px);
+        transform: translateZ(-700px) translateY(-500px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.tracking-in-expand-fwd-top {
+    -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
 .skills {
     text-align: center;
     background-color: #39304A;
@@ -7,7 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .skills h1,
@@ -19,4 +63,46 @@ h3 {
     color: #fff;
     font-size: 32px;
     font-family: Libre Baskerville;
+}
+
+.marginR {
+    margin-right: 20px;
+}
+
+.textSkills {
+    font-size: 20px;
+}
+
+.aboutTitle {
+    z-index: 999;
+}
+
+
+.skills-box {
+    padding: 20px;
+    background-color: transparent; /* Cor de fundo transparente */
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo */
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.devicon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+.flexIcon {
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Defina a largura para 1/3 menos a margem */
+    max-width: calc(33.33% - 20px); /* Defina a largura máxima para 1/3 menos a margem */
+    display: flex;
+    justify-content: start;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
