@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #55423d;
+  background-color: #39304A;
 }
 
 .App-logo {
@@ -23,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #140d0b;
+  background-color: #202030;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #140d0b;
+  background: #202030;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -71,14 +71,14 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background: #ffc0ad;
+  background: #635C51;
 }
 
 .wave-divider {
   height: 100px; /* Ajuste a altura da onda conforme necessário */
   width: 100%;
   position: relative;
-  color: #140d0b;
+  color: #202030;
 }
 
 .wave-divider svg {
@@ -93,7 +93,7 @@
   height: 100px; /* Ajuste a altura da onda conforme necessário */
   width: 100%;
   position: relative;
-  color: #140d0b;
+  color: #202030;
 }
 
 .wave-dividerProjects svg {

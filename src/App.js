@@ -5,15 +5,13 @@ import Home from './components/home/home';
 import Projects from './components/projects/projects';
 import About from './components/aboutMe/about';
 import Contact from './components/contact/contact';
+import Navbar from './components/navbar/navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Bem-vindo ao meu portfólio!
-        </p>
-      </header>
+      <Navbar />
+      <section className="App-header"></section>
 
       <div className="wave-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
