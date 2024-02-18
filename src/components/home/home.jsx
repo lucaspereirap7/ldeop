@@ -4,7 +4,7 @@ import './home.css';
 
 const Home = () => {
     const [typedText, setTypedText] = useState('');
-    const textsToType = ["Lucas", "Luquinha", "Luket", "As you wish..."];
+    const textsToType = ["Lucas...", "Luquinha...", "Luket...", "As you wish..."];
     const typingSpeed = 60;
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
