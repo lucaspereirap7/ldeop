@@ -17,6 +17,7 @@ const Contact = () => {
                 <ion-icon className="iconGithub" name="logo-github"></ion-icon>
                 </div>
                 <h5>©️ copyright 2024</h5>
+                <h6 className='ldeopdev'>&lt;LdeopDev/&gt;</h6>
             </div>
         </div>
     );

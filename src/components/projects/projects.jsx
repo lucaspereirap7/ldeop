@@ -34,9 +34,14 @@ const Projects = () => {
                     ))}
                 </Swiper>
             </div>
-            <h4>
-                Projects carried out as a team. All rights reserved.
-            </h4>
+            <div>
+                <h4>
+                    projects carried out as a team. all rights reserved.
+                </h4>
+                <div className="divMg">
+                    <h6 className="mgCode">&lt;<span className="mg">mg</span>/&gt;code ©️</h6>
+                </div>
+            </div>
         </div>
     );
 }

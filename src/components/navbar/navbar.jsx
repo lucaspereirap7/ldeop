@@ -5,7 +5,7 @@ export default function Navbar() {
 
     return (
         <header className="bg-white">
-            {/* <a href="#" className="logo">
+            <a href="#" className="logo">
                 <img src="logoL4.png" className='slide-in-blurred-top' alt="logo" />
             </a>
             <nav className="navbar">
@@ -17,7 +17,7 @@ export default function Navbar() {
                     <li className="nav-item slide-in-blurred-top"><a href="#projects"><span class="num-nav"></span>Projects</a></li>
                     <li className="nav-item slide-in-blurred-top"><a href="#contact"><span class="num-nav"></span>Contact</a></li>
                 </ul>
-            </nav> */}
+            </nav>
         </header>
     );
 }

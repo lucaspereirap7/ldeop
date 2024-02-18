@@ -70,6 +70,12 @@ header {
     /* Removendo a sombra para um visual mais limpo */
 }
 
+
+.logo img {
+    width: 60px;
+    padding-left: 10px;
+}
+
 .navbar {
     display: flex;
     align-items: center;

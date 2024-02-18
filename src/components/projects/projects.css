@@ -103,3 +103,18 @@
     height: 500px;
 }
 
+.mgCode {
+    font-size: 14px;
+    font-family: Libre Baskerville;
+    color: #fff;
+}
+
+.divMg {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.mg {
+    color: red;
+}

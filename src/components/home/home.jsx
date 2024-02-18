@@ -39,9 +39,6 @@ const Home = () => {
 
     return (
         <div className="home">
-            <a href="#" className="logo">
-                <img src="logoL4.png" className='slide-in-blurred-top' alt="logo" />
-            </a>
             <p className='textHome'>Hello, nice to meet you!</p>
             <p className='textHome'>
                 You can call me: {typedText}
