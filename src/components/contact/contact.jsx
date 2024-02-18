@@ -13,8 +13,8 @@ const Contact = () => {
             <div className="socialIcons">
                 <div className='icons'>
                 <ion-icon className="iconInstagram" name="logo-instagram"></ion-icon>
-                <ion-icon className="iconLinkedin" name="logo-linkedin"></ion-icon>
                 <ion-icon className="iconGithub" name="logo-github"></ion-icon>
+                <ion-icon className="iconLinkedin" name="logo-linkedin"></ion-icon>
                 </div>
                 <h5>©️ copyright 2024</h5>
                 <h6 className='ldeopdev'>&lt;LdeopDev/&gt;</h6>
