@@ -113,3 +113,16 @@ p {
 .textHome {
   font-size: 46px;
 }
+
+.wave {
+  animation: wave-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
